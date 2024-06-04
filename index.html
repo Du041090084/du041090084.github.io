@@ -1,13 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1>
-  This is my first website
-  </h1>
-</body>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<link type="text/css" rel="stylesheet" href="css/stylesheet.css">
+		<title>Yuyang Du</title>
+	</head>
+	
+	<body class="background-color">
+	
+		<div class="header">
+			<h1 class="center">Yuyang Du</h1>
+		</div>
+		<div id="navbar">
+			<a href="index.html">Index</a>
+			<a href="resume.html">Resume</a>
+			<a href="projects.html">Projects</a>
+			<a href="contactform.html">Contact Me</a>
+			<a href="https://www.algonquincollege.com/">Studying College</a>
+			<a href="https://www.ualberta.ca/index.html">Studied University</a>
+		</div>
+		<div class="flex-container-row">
+			<div>
+				<h1>Yuyang Du</h1>
+					<p>
+						I was born in 2001 in the city of <span class="bold">Shenyang</span> 
+						in China, and moved to Canada in 2012 when my parents decided it would be better 
+						for my younger sister and I's future education and life. I have graduated form the 
+						<span class="bold">University of Alberta</span> with a Bachelor's degree 
+						in Environmental Engineering, and am currently enrolled in 
+						<span class="bold">Algonquin College</span> 
+						under the <span class="bold">Computer Engineering</span> program.
+					</p>
+			</div>
+			<div>
+			<img src="img/me.jpg" alt="my image" class="index-img-size-loc">
+			</div>
+		</div>
+		<script>
+			window.onscroll = function() {myFunction()};
+
+			// Get the navbar
+			var navbar = document.getElementById("navbar");
+
+			// Get the offset position of the navbar
+			var sticky = navbar.offsetTop;
+
+			// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+			function myFunction() {
+			  if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+			  } else {
+				navbar.classList.remove("sticky");
+			  }
+			}
+		</script>
+	</body>
 </html>

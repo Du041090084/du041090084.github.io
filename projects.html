@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<link type="text/css" rel="stylesheet" href="css/stylesheet.css">
+		<title>Projects</title>
+	</head>
+	<body class="background-color">
+		<div class="header">
+			<h1 class="center">Projects I have Completed</h1>
+		</div>
+		<div id="navbar">
+			<a href="index.html">Index</a>
+			<a href="resume.html">Resume</a>
+			<a href="projects.html">Projects</a>
+			<a href="contactform.html">Contact Me</a>
+			<a href="https://www.algonquincollege.com/">Studying College</a>
+			<a href="https://www.ualberta.ca/index.html">Studied University</a>
+		</div>
+		<!-- Slideshow container -->
+		<div class="slideshow-container">
+
+			<!-- Full-width images with number and caption text -->
+			<div class="mySlides fade">
+				<div><h1>The Roastery</h1></div>
+				<div class="numbertext">1/4</div>
+				<img src="img/Roastery.jpg" alt="Roastery" class="project-img-siz">
+				<div class="captext">
+					The Roastery: Completed Nov. 24th, 2023. Successfully utilized while loops, if switches and other 
+					java properties such as private and class variables, objects, 
+					and method calling across classes to create a brewery evaluator 
+					for coffeeshops.
+				</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div><h1>The Shoe Size Converter</h1></div>
+				<div class="numbertext">2/4</div>
+				<img src="img/shoeconverter.jpg" alt="Converter" class="project-img-siz">
+				<div class="captext">The Converter: Completed Nov. 17th, 2023. Using while loops and if switches, created a program that will convert shoe sizes from American standard to European standadrd.</div>
+			</div>
+
+			<div class="mySlides fade">
+				<div><h1>Registration Form</h1></div>
+				<div class="numbertext">3/4</div>
+				<img src="img/papersplease.jpg" alt="Registration" class="project-img-siz">
+				<div class="captext">The Registration From: Completed Feb. 10th, 2024. Using HTML and CSS styling, I created a registration form with appropriate background coloring, text box locations, and methods for both submission and page resets.</div>
+			</div>
+			<div class="mySlides fade">
+				<div><h1>Code Testing</h1></div>
+				<div class="numbertext">4/4</div>
+				<img src="img/tester.jpg" alt="codetester" class="project-img-siz">
+				<div class="captext">Code Testing and De-bugging: Completed Feb. 11th, 2024. Using J-Unit testing, successfully located malfunctinoing code and corrected said code and ensured program integrity.</div>
+			</div>
+
+				<!-- Next and previous buttons -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			</div>
+		<br>
+
+		<!-- The dots/circles -->
+		<div class="center">
+			<span class="dot" onclick="currentSlide(1)"></span>
+			<span class="dot" onclick="currentSlide(2)"></span>
+			<span class="dot" onclick="currentSlide(3)"></span>
+			<span class="dot" onclick="currentSlide(4)"></span>
+		</div>
+		<script>
+			let slideIndex = 1;
+			showSlides(slideIndex);
+
+			// Next/previous controls
+			function plusSlides(n) {
+				showSlides(slideIndex += n);
+			}
+
+			// Thumbnail image controls
+			function currentSlide(n) {
+				showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+				let i;
+				let slides = document.getElementsByClassName("mySlides");
+				let dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {slideIndex = 1}
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";
+				dots[slideIndex-1].className += " active";
+			}
+			window.onscroll = function() {myFunction()};
+
+			// Get the navbar
+			var navbar = document.getElementById("navbar");
+
+			// Get the offset position of the navbar
+			var sticky = navbar.offsetTop;
+
+			// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+			function myFunction() {
+			  if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+			  } else {
+				navbar.classList.remove("sticky");
+			  }
+			}
+		</script>
+	</body>
+</html>

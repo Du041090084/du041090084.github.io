@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link type="text/css" rel="stylesheet" href="css/stylesheet.css">
+		<title>Yuyang Du's Resume</title>
+	</head>
+	<body class="background-color">
+		<div class="header">
+			<h1 class="center">Yuyang Du's Resume</h1>
+		</div>
+		<div id="navbar">
+			<a href="index.html">Index</a>
+			<a href="resume.html">Resume</a>
+			<a href="projects.html">Projects</a>
+			<a href="contactform.html">Contact Me</a>
+			<a href="https://www.algonquincollege.com/">Studying College</a>
+			<a href="https://www.ualberta.ca/index.html">Studied University</a>
+		</div>
+		
+		<div class="flex-container">
+			<div>
+				<h1 id="ConInf">Contact Information</h1>
+				<p><span class="bold">Address:</span>55 Insmill Cres, Kanata, Ontario, Canada</p>
+				<p><span class="bold">Postal Code: </span>K2T 1G4</p>
+				<p><span class="bold">Phone Number: </span>+1(613)-769-0688</p>
+				<p><span class="bold">Email: </span>du000084@algonquinlive.com</p>
+				<p><span class="bold">LinkedIn: </span><a href="https://www.linkedin.com/in/ryan-du-61447a246/">Ryan Du</a></p>
+			</div>
+			<div>
+				<h1 id="Obj">Objective</h1>
+				<p class="resume-inner-width">
+					I strive to create and maintain a better nautral environment through 
+					the use of mathematical and digital modeling, predicting and estimating 
+					future weather events and possible influences of human infrasturcture. 
+					The protection and preservation of environmental longevity is a duty that
+					should be shared amongst all mankind. 
+				</p>
+			</div>
+			<div>
+				<h1 id="Exp">Work Experience</h1>
+				<p>- Construction Worker,101284751 Saskatchewan Ltd. Jun. 2019 - Aug. 2023</p>
+				<p>- General Clerk, Mr.Pretzels. Jun.2021 - Aug. 2023</p>
+			</div>
+			<div>
+				<h1 id="Skills">Skills</h1>
+				<p>- 4 years of experience working with various software such as Microsoft Word, Excel, PowerPoint, Revit 3D, Autodesk, WaterGEMS, SewerGEMS, BioWIN, PLAXIS 2D and StormCAD.</p>
+				<p>- Understands logic behind coding, experience in using MATLAB, C++, HTML, SQL, Java and Python</p>
+				<p>- Delivered variety of research related presentations, such as Canadian regulations relating to electronic waste, air quality and water treatment, to groups of listeners ranging from 2 to 40 listeners.</p>
+				<p>- Experience in both drawing building blueprints using software such as Revit 3D according to field measurements and erecting required structures and framework according to blueprint provided.</p>
+			</div>
+			<div>
+				<h1 id="Education">Education</h1>
+				<p>- <span class="bold">Bachelor of Science, Environmental Engineering</span>, July 23rd 2023, University of Alberta, Edmonton, AB</p>
+			</div>
+		</div>
+		<script>
+			window.onscroll = function() {myFunction()};
+
+			// Get the navbar
+			var navbar = document.getElementById("navbar");
+
+			// Get the offset position of the navbar
+			var sticky = navbar.offsetTop;
+
+			// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+			function myFunction() {
+			  if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+			  } else {
+				navbar.classList.remove("sticky");
+			  }
+			}
+		</script>
+	</body>
+</html>

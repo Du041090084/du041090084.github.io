@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<link type="text/css" rel="stylesheet" href="css/stylesheet.css">
+		<title>Contact Form</title>
+	</head>
+	<body class="background-color">
+		<div class="header">
+			<h1 class="center">Feel Free to Contact me Using the Form Below!</h1>
+		</div>
+		<div id="navbar">
+			<a href="index.html">Index</a>
+			<a href="resume.html">Resume</a>
+			<a href="projects.html">Projects</a>
+			<a href="contactform.html">Contact Me</a>
+			<a href="https://www.algonquincollege.com/">Studying College</a>
+			<a href="https://www.ualberta.ca/index.html">Studied University</a>
+		</div>
+		<div id="wrapper" >
+			<form id="myForm" name="ContactInfo" action= "javascript:void(0);" method="post">
+				<header>
+					<h1 class="center">Contact</h1>
+					<p>Please enter the following information.</p>
+				</header>
+				<div id="content">
+					<fieldset>
+						<legend>Personal Information</legend>
+						<table>
+							<tr>
+								<!-- First Name | textbox -->
+								<td>First name:</td>
+								<td><input type="text" id="fname" name="Fname" placeholder="Yuyang"></td>
+							</tr>
+							<tr>
+								<!-- Last Name | textbox -->
+								<td>Last name:</td>
+								<td><input type="text" id="lname" name="Lname" placeholder="Du"></td>
+							</tr>
+							<tr>
+								<!-- Email Address | textbox, with a size of 40 characters -->
+								<td>Email Address:</td>
+								<td><input type="text" id="eaddress" name="eaddress" placeholder="JohnDoe123@gmail.com" size="40"></td>
+							</tr>
+							<tr>
+								<td>Message:</td>
+								<td><textarea id="message" name="message" rows="4" cols="50"></textarea>
+							</tr>
+						</table>
+						<input type="submit" value="Submit">
+					</fieldset>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>
